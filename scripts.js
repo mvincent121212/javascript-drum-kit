@@ -56,7 +56,7 @@ drumKeys.forEach(key => {
     key.addEventListener('transitionend', removeKeyTransition);
 });
 
-crashRide.addEventListener('transitionend', removeCrashRideTransition);
-hiHatTop.addEventListener('transitionend', removeHiHatTopTransition);
+crashRide.addEventListener('transitionend', removeRideTransition);
+hiHatTop.addEventListener('transitionend', removeHiHatTransition);
 
-Window.addEventListener('keydown', playSound);
+window.addEventListener('keydown', playSound);
